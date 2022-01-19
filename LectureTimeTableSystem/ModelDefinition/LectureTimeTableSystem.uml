@@ -1,0 +1,1777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4d7c0b33-9831-466e-a332-3afe81be4184"
+  name="LectureTimeTableSystem" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="5165b09d-a2b2-41db-9e00-75ec0807ce4d">
+      <body>Check User Level and Permissions based on credentials from registration form.</body>
+      <annotatedElements>
+        <decisionNodeMoniker
+          Id="a5238c06-2059-4a31-98be-95b05adf6ac1"
+          LastKnownName="Decision12"
+          LastKnownLocation="LectureTimeTableSystem.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="c2360848-28be-4c0e-8d40-61832b613b98"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="d6d1d2dc-56ae-4ce8-96b4-337fb808af6f"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9386e3bd-e313-410f-8703-e1b94311edbf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="93dd5565-9a1d-4695-b840-541402d8c25e"
+                  LastKnownName="Sign-in"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="93dd5565-9a1d-4695-b840-541402d8c25e"
+            name="Sign-in"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d0390feb-95de-4a08-9d70-feb855dc6730"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c76fc26c-27ca-4ddb-97e4-8b7a2f6b1721"
+                  LastKnownName="Registration form pop-up"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c76fc26c-27ca-4ddb-97e4-8b7a2f6b1721"
+            name="Registration form pop-up"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="76fe3d6f-b4be-489a-ad33-45a28c0bd976"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="a5238c06-2059-4a31-98be-95b05adf6ac1"
+                  LastKnownName="Decision12"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="a5238c06-2059-4a31-98be-95b05adf6ac1"
+            name="Decision12"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="252fbc75-fa42-45b7-bd0e-1308dde0dd73"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7430ed58-3e7b-473c-bf00-1b016631658e"
+                  LastKnownName="Student Dashboard Page"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="112ed082-62df-45ab-853a-cff05d05580b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5c1dc442-8c71-4272-b8d9-1ad7d1550ae8"
+                  LastKnownName="Admin Dashboard"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="fe166ef7-ec3c-4993-a602-bef899bf3ac3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="176cef6d-04e7-4f6a-a6db-5aa38e75d645"
+                  LastKnownName="Lecturer Dashboard"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="4c0c51b6-0fb9-41ea-bf3c-7e9a065598b2"
+            name="View Student Time Table"
+            isLeaf="false" />
+          <opaqueAction
+            Id="25471084-5166-49f9-a0da-708e564abd8a"
+            name="View Faculty Time Table"
+            isLeaf="false" />
+          <opaqueAction
+            Id="7430ed58-3e7b-473c-bf00-1b016631658e"
+            name="Student Dashboard Page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cc58fd04-e79e-4ff1-bc0f-0e3ba8aa5729"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4c0c51b6-0fb9-41ea-bf3c-7e9a065598b2"
+                  LastKnownName="View Student Time Table"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="cd5fce73-86dc-40aa-a687-9963fd75031d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="25471084-5166-49f9-a0da-708e564abd8a"
+                  LastKnownName="View Faculty Time Table"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e4aba438-b9b7-482b-9d3e-a5aacc1d180f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="456e9041-cafc-4257-844d-776d4c257a09"
+                  LastKnownName="manage course form"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="bdc9c542-a4a4-420c-98f8-f1665851e9a3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7823644e-c87b-4989-bf24-fb1283cc8fcc"
+                  LastKnownName="Displays Course for the day"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="65457079-e433-4e06-80f9-435206e79425"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1e81a2f2-bf08-448f-acf3-2ea2334c8bf4"
+                  LastKnownName="Display Student Details"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5cc5cee5-b8aa-4a90-8504-c2c6b47c5917"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="a49fd215-7469-4aac-89ca-d3bf235d002f"
+                  LastKnownName="Join1"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="176cef6d-04e7-4f6a-a6db-5aa38e75d645"
+            name="Lecturer Dashboard"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e6562f5f-5c9c-4f5a-8fb0-fe4cc7834c3a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b38e217e-ce9d-487f-bdeb-24b61c1a76ad"
+                  LastKnownName="Manage Departments Time Table"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="025ad528-9c61-4d94-b7eb-7ed1e46a4e28"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9a4df5a0-e1c0-4717-9939-25339439a318"
+                  LastKnownName="Manage Faculty Courses"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c9383c90-f18b-4717-98f1-4ffb6e098df2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9edbaa7e-630e-4286-8a3e-f21d54d85bb7"
+                  LastKnownName="Display Lecturer Details"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3af1b520-a00c-489f-b2a1-a09175e4745b"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="a49fd215-7469-4aac-89ca-d3bf235d002f"
+                  LastKnownName="Join1"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="456e9041-cafc-4257-844d-776d4c257a09"
+            name="manage course form"
+            isLeaf="false" />
+          <opaqueAction
+            Id="ebb1a881-d676-4aa1-81c1-1ed28cbfafd2"
+            name="Logout"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6b8da624-aa18-4874-9289-6277c3c36553"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="96407961-b3a0-4a1c-990c-19a2d65a3b3d"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="96407961-b3a0-4a1c-990c-19a2d65a3b3d"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="5c1dc442-8c71-4272-b8d9-1ad7d1550ae8"
+            name="Admin Dashboard"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="10cac527-750a-4502-a7ef-b54554a6f08c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9182e2be-2152-499d-9bef-9f1b4c3a90ee"
+                  LastKnownName="Manage Faculty Courses"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e4715440-b20b-407b-9413-b912ad980f04"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f947f11f-1ee1-46cf-8e65-c835d190654a"
+                  LastKnownName="Manage Student Dashboard"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="331ef9c0-5ec3-43ef-acf9-dda4e917f032"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f3a07c29-eff3-46cf-9341-51fc991347e8"
+                  LastKnownName="Manage Lcturer Dashboard"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c1960202-61dc-4228-88b7-7c2ecf9f908d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bdb7d402-aea8-4d78-8cc6-0bb50fd26e07"
+                  LastKnownName="Manage All Departments Courses"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="64a6e9b6-15b1-4e45-9bd3-08413d496a5b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="23f516f1-2503-4916-8c6c-c7e255bec84e"
+                  LastKnownName="Display Admin's Details"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b10ac6a5-0e0c-4b91-90b3-eb65d1861db2"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="a49fd215-7469-4aac-89ca-d3bf235d002f"
+                  LastKnownName="Join1"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7823644e-c87b-4989-bf24-fb1283cc8fcc"
+            name="Displays Course for the day"
+            isLeaf="false" />
+          <opaqueAction
+            Id="b38e217e-ce9d-487f-bdeb-24b61c1a76ad"
+            name="Manage Departments Time Table"
+            isLeaf="false" />
+          <opaqueAction
+            Id="9a4df5a0-e1c0-4717-9939-25339439a318"
+            name="Manage Faculty Courses"
+            isLeaf="false" />
+          <opaqueAction
+            Id="9182e2be-2152-499d-9bef-9f1b4c3a90ee"
+            name="Manage Faculty Courses"
+            isLeaf="false" />
+          <opaqueAction
+            Id="f947f11f-1ee1-46cf-8e65-c835d190654a"
+            name="Manage Student Dashboard"
+            isLeaf="false" />
+          <opaqueAction
+            Id="f3a07c29-eff3-46cf-9341-51fc991347e8"
+            name="Manage Lcturer Dashboard"
+            isLeaf="false" />
+          <opaqueAction
+            Id="bdb7d402-aea8-4d78-8cc6-0bb50fd26e07"
+            name="Manage All Departments Courses"
+            isLeaf="false" />
+          <opaqueAction
+            Id="1e81a2f2-bf08-448f-acf3-2ea2334c8bf4"
+            name="Display Student Details"
+            isLeaf="false" />
+          <opaqueAction
+            Id="9edbaa7e-630e-4286-8a3e-f21d54d85bb7"
+            name="Display Lecturer Details"
+            isLeaf="false" />
+          <opaqueAction
+            Id="23f516f1-2503-4916-8c6c-c7e255bec84e"
+            name="Display Admin's Details"
+            isLeaf="false" />
+          <joinNode
+            Id="a49fd215-7469-4aac-89ca-d3bf235d002f"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9ca3ff6b-e81d-448c-9186-225371c25d1b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ebb1a881-d676-4aa1-81c1-1ed28cbfafd2"
+                  LastKnownName="Logout"
+                  LastKnownLocation="LectureTimeTableSystem.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1f409cb3-c215-4010-8115-8a2999750dc8"
+        name="Role Class"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="00ba0f9c-a9c9-498e-9f09-b3daf3747d57"
+            name="role_title"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="21034898-251b-4f2e-8292-8d09d477de8d"
+            name="role_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9d3dd99f-eb71-4cac-8e51-5e3cc11fee63"
+            name="role_description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="70a9712d-cd72-4a5b-8a6e-5d658d67dbd8"
+            name="addRole"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5c7a2bf4-24e9-47e3-bc8a-e26ade86ed7e"
+            name="editRole"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="85e00a02-68f7-43e4-814f-5a9cd9507e07"
+            name="deleteRole"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="43abc16b-d4ee-4f72-a4a2-0bd9cd32b960"
+            name="searchRole"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="daa7072b-691c-4532-8371-87cc33ceb0a7"
+            name="assignRole"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dda1c071-0a18-4548-9c45-2780c073c0c3"
+        name="Permission Class"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="03f52928-aa23-4bba-93d7-a7753a3bd58b"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0812b575-43d7-42ae-a41d-7c4d10151948"
+              LastKnownName="TimeTable Class"
+              LastKnownLocation="LectureTimeTableSystem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dbb564ef-0d78-47bd-8f21-147fec7f8acf"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="398d26ee-1a86-45e6-bd93-cb380c28730c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a4d5f2c1-c5ae-48b5-8923-85586461d648"
+            name="permission_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6aa35dae-c7b6-44ad-af70-5d44b4ffe1dd"
+            name="permission_role_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f64c2463-0b4d-40eb-a031-fd7a8f229473"
+            name="permission_tittle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ef2d86af-e816-4057-bf36-f272faa182d4"
+            name="permission_module"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1513ee6b-c7e0-42a7-b57b-8d9c8a8e1010"
+            name="permission_description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="047a9343-fbf2-4fb3-a626-56ce936d3043"
+            name="addPermission"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4e72b7f0-d709-493a-8570-759b48f81b55"
+            name="editPermission"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="90d03493-bfc5-45f2-9777-a23f041b7563"
+            name="deletePermission"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ab46a055-4be4-4d3a-9616-59baaef16501"
+            name="searchPermission"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0812b575-43d7-42ae-a41d-7c4d10151948"
+        name="TimeTable Class"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="1080dc95-4b3e-4f6f-b98d-e0b216267ef4"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="Subject Class"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2d19bf4d-497d-4027-b66c-d25ae33f72a4"
+              LastKnownName="Subject Class"
+              LastKnownLocation="LectureTimeTableSystem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="08ef1c06-5180-409e-b200-1541626a9f5c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c597f67a-f31f-4109-b0ce-ae8496c8b242"
+                  name="Subject Class"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="06143dab-0216-44da-a0ac-87dccdc2bea3"
+            name="timetable_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2ece364b-a75d-4d4f-8bf7-c0cf7da1a0df"
+            name="timetable_description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3fa3307a-5a89-48d6-86da-0f1089d94353"
+            name="timetable_type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d46257d6-1714-4ef4-bfdf-cabcccf1c634"
+            name="timetable_name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="08a5b862-1b33-40ee-923b-981df46c4325"
+            name="addTimetable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fe7f5070-700b-4395-8bcc-13e06414ded1"
+            name="editTimetable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8a47236c-088f-4536-92b5-b0cc4b1a8019"
+            name="deleteTimetable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="aef482e5-9d0c-4de8-b6c0-d02f2da70691"
+            name="searchTimetable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4d316f41-5895-40c6-8e9c-78936d79b6df"
+        name="User Class"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="0fbeb84b-dc83-4c9a-9657-d92192408574"
+            isDerived="false"
+            sourceEndRoleName="User Class"
+            targetEndRoleName="Role Class"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1f409cb3-c215-4010-8115-8a2999750dc8"
+              LastKnownName="Role Class"
+              LastKnownLocation="LectureTimeTableSystem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca9ceff1-4414-4f75-93ee-2ca916eb63b4"
+                  name="User Class"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0902b863-c0d7-4db2-a1e7-a75bbfb32748"
+                  name="Role Class"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5442ac56-e33a-41b0-ae96-26554403025b"
+            isDerived="false"
+            sourceEndRoleName="User Class"
+            targetEndRoleName="Permission Class"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dda1c071-0a18-4548-9c45-2780c073c0c3"
+              LastKnownName="Permission Class"
+              LastKnownLocation="LectureTimeTableSystem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b11a72e6-fc66-458a-a25b-67ec02ddd56a"
+                  name="User Class"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc53766a-ae72-4b73-852a-f2af6e797d71"
+                  name="Permission Class"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="fac5f6c5-decd-4bbf-87c3-3a4f3a8bf4e8"
+            name="user_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b3a93ded-fd14-402e-a876-c6ddf337e226"
+            name="user_role_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="43e1cd78-5ec5-4d69-b502-b90d67c7ccf1"
+            name="user_name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f4090be7-2d63-4407-ab51-5785ad2fb4a0"
+            name="user_email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8529535a-03c7-4979-90f5-c6442c6367ad"
+            name="user_dob"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="abda66bc-e346-42dc-8a06-1cc71205deb5"
+                LastKnownName="date"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="74dd43ac-49fa-4324-adbf-7dd9f4ecb162"
+            name="user_address"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="90c304cc-e940-4137-803c-0af16e60594b"
+            name="addUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="da7aed7c-e062-47c0-b045-329d95473502"
+            name="editUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bbad20a5-9cad-494c-bc0e-4e30dcb67f28"
+            name="deleteUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="898cb211-fef4-4c45-ab23-041d07fbd87e"
+            name="searchUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="abda66bc-e346-42dc-8a06-1cc71205deb5"
+        name="date" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="78f78ce1-38a8-4aa0-8c04-76c7f9b914aa"
+        name="Attendance Class"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ddb247eb-4c59-4325-9db3-88eee53c2e3b"
+            isDerived="false"
+            sourceEndRoleName="Attendance Class"
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0812b575-43d7-42ae-a41d-7c4d10151948"
+              LastKnownName="TimeTable Class"
+              LastKnownLocation="LectureTimeTableSystem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3530974-7dc8-45b5-9711-20442151c7bc"
+                  name="Attendance Class"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="879ac3f1-38c0-4f5f-b5ca-8dc1bdb83f14"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="db5280bb-ef22-4198-9f04-e111cffa6a5a"
+            name="attendance_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="59beec24-2735-4386-bf3a-6d9570af3cff"
+            name="attendance_student_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ae7fc284-342a-49d3-8b33-8a87367a44cd"
+            name="attendance_type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f5e9d54d-c6b5-4bde-8a27-79aa1cd7f32e"
+            name="attendance_description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cf43c2a4-7c30-4624-9193-9fd74b1157bb"
+            name="addAttendance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f9647ffc-a80d-44e1-9ac2-00ec5199aa34"
+            name="editAttendance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e36e198c-9f27-45a6-9e23-e00d50431c89"
+            name="deleteAttendance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="69c2a330-82ca-4953-91a0-a9e912c7ebb4"
+            name="searchAttendance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2d19bf4d-497d-4027-b66c-d25ae33f72a4"
+        name="Subject Class"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1180f13c-cd0b-4600-a6cf-c5ea1d5a385f"
+            name="subject_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6b3340f6-b359-4cf8-aca8-fa8362a348be"
+            name="subject_name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6d0f8cfc-60f0-4851-960a-6e9f1eb18656"
+            name="subject_type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="68691b4c-67d9-4432-84bd-6648552136cd"
+            name="subject_description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="756c591a-90da-42b5-9b03-281c70475886"
+            name="subject_student_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2dbde047-2b5b-4860-946d-246356f5cde3"
+            name="addSubject"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a2ec25cc-70f9-43ff-94df-0388c914101d"
+            name="edithSubject"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b7f70801-47ce-4392-a42d-b13de218ea56"
+            name="deleteSubject"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4e62fd69-44f2-454f-a141-db708d9feba6"
+            name="searchSubject"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d476c014-ac8e-41b9-84f0-50757fa5c7c7"
+        name="Class Class"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4be43265-54a1-4389-a43f-6c114ec318e4"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0812b575-43d7-42ae-a41d-7c4d10151948"
+              LastKnownName="TimeTable Class"
+              LastKnownLocation="LectureTimeTableSystem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="291402aa-5af1-49a1-b4c0-ac7e60ef9207"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a6d1e144-4936-491e-a052-8bacd8ddd787"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="598daaca-0b85-4f3c-9775-7ad29d3b7cdc"
+            name="class_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="84f97b5e-a777-46cb-9d9b-4a3022d5b40e"
+            name="class_name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b1ad1222-e1eb-4262-8eb4-1be9336fbb0e"
+            name="class_description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a4bd264c-0b55-4670-8c7f-2d7d72e3a24f"
+            name="class_type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="69ed2b3c-94ed-4d60-85a2-797aec07b1cb"
+            name="class_student_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="469b2c81-43ec-4339-93d9-8d1f36b61b62"
+            name="class_room"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="997bc99d-d787-4726-a56d-efcb5b2db5ed"
+            name="addClass"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a39ffea8-c762-4438-b93d-0ac3a342ecdd"
+            name="edithClass"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="814e8863-85f8-427c-add8-0a6c9f6097b3"
+            name="seleteClass"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="aec11f1b-69e6-4936-857a-574cc1fc8a56"
+            name="searchClass"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e56f006d-cc5f-4768-99d7-0ff0c57b5c6a"
+        name="Student Class"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f61ccee5-847b-427d-aca7-d25c7ee6870b"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0812b575-43d7-42ae-a41d-7c4d10151948"
+              LastKnownName="TimeTable Class"
+              LastKnownLocation="LectureTimeTableSystem.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e6463ce3-d571-48a3-9480-eecff3382c8e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4c1794e7-f5b0-4427-8b5f-e398a933b4ce"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="c0208d22-304c-4fff-bdef-347411ceb342"
+            name="student_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="544ccb2c-81b4-45a5-b851-66ef24506fbb"
+            name="student_name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1b6bf4ef-77a6-4e06-b931-2fe95a88309d"
+            name="student_mobile"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e112a87e-67fd-41ab-adcc-7c12e4b81ba6"
+            name="student_email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2a4272b9-4113-4ce2-8eb5-f5feed45af3a"
+            name="student_address"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="35047a4c-081c-45d0-9723-40052beb8ab2"
+            name="student_username"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="584712ac-707d-448b-bdde-345a0a78a710"
+            name="student_password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="dfe65aa2-361d-4ada-9c22-f46e8d0093e1"
+                LastKnownName="string"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e67de0c9-7ee9-45d5-a4a3-42c5fade8bc7"
+            name="student_university_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbd6e5e8-1259-4dbc-a77a-cca4c12c576e"
+                LastKnownName="int"
+                LastKnownLocation="LectureTimeTableSystem.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="773ac190-bd15-431a-ad1e-d7490bbde03a"
+            name="addStudent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0dd3011f-e322-48d8-b029-871119389737"
+            name="editStudent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="837198bc-11b3-4925-9bd0-0308f2855b4c"
+            name="deleteStudent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ec493af0-9234-40ca-a4e2-1fd39cd60b25"
+            name="searchStudent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

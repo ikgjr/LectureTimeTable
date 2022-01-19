@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c5884c06-7f88-4d6a-b16a-22cf882571a1" name="Activity1" linkedPackageId="ee9ddace-1105-499d-b099-e36528bf298d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="acdff434-6c94-4516-b934-859b23237649">
+      <elementDefinition Id="5165b09d-a2b2-41db-9e00-75ec0807ce4d" />
+      <body>Check User Level and Permissions based on credentials from registration form.</body>
+      <annotatedElements>
+        <decisionNodeMoniker Id="fa292f95-0e19-4990-8862-824ddd1014e2" LastKnownName="Decision12" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="7b537255-1e29-40e0-90ce-40fa92b9defb" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="c2360848-28be-4c0e-8d40-61832b613b98" />
+        <nodes>
+          <initialNode Id="517ca56f-091c-4610-96e5-2b5cc253c526" name="Initial1" isLeaf="false">
+            <elementDefinition Id="d6d1d2dc-56ae-4ce8-96b4-337fb808af6f" />
+            <flowNodeTargets>
+              <controlFlow Id="faef4240-0c7d-44a2-8fde-01e354ebfac4" isLeaf="false">
+                <opaqueActionMoniker Id="bd147e02-ed68-4c9f-87ba-0045ad8e1afc" LastKnownName="Sign-in" />
+                <elementDefinition Id="9386e3bd-e313-410f-8703-e1b94311edbf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="bd147e02-ed68-4c9f-87ba-0045ad8e1afc" name="Sign-in" isLeaf="false">
+            <elementDefinition Id="93dd5565-9a1d-4695-b840-541402d8c25e" />
+            <flowNodeTargets>
+              <controlFlow Id="408666b8-1800-4578-b226-2887f7b0d8fd" isLeaf="false">
+                <opaqueActionMoniker Id="9078eafb-8990-4d25-a6fe-2126b7286ba1" LastKnownName="Registration form pop-up" />
+                <elementDefinition Id="d0390feb-95de-4a08-9d70-feb855dc6730" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9078eafb-8990-4d25-a6fe-2126b7286ba1" name="Registration form pop-up" isLeaf="false">
+            <elementDefinition Id="c76fc26c-27ca-4ddb-97e4-8b7a2f6b1721" />
+            <flowNodeTargets>
+              <controlFlow Id="3f3ecdaa-306f-4cc0-ae3d-324d82a36059" isLeaf="false">
+                <decisionNodeMoniker Id="fa292f95-0e19-4990-8862-824ddd1014e2" LastKnownName="Decision12" />
+                <elementDefinition Id="76fe3d6f-b4be-489a-ad33-45a28c0bd976" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="fa292f95-0e19-4990-8862-824ddd1014e2" name="Decision12" isLeaf="false">
+            <elementDefinition Id="a5238c06-2059-4a31-98be-95b05adf6ac1" />
+            <flowNodeTargets>
+              <controlFlow Id="5d0b1d4c-f6da-4c99-840d-d3529b36fd48" isLeaf="false">
+                <opaqueActionMoniker Id="a065de62-e3ea-41cd-9f0c-1e6809e08092" LastKnownName="Student Dashboard Page" />
+                <elementDefinition Id="252fbc75-fa42-45b7-bd0e-1308dde0dd73" />
+              </controlFlow>
+              <controlFlow Id="ec27f1f2-aef2-419f-881e-f02bda33ce7b" isLeaf="false">
+                <opaqueActionMoniker Id="c50c18a2-f26a-427d-a25f-d679ab6fd15b" LastKnownName="Admin Dashboard" />
+                <elementDefinition Id="112ed082-62df-45ab-853a-cff05d05580b" />
+              </controlFlow>
+              <controlFlow Id="88382d2e-dbf0-45a8-9841-5f343e94d182" isLeaf="false">
+                <opaqueActionMoniker Id="2d095aa3-72a3-4ced-8ad3-6f2742351e5b" LastKnownName="Lecturer Dashboard" />
+                <elementDefinition Id="fe166ef7-ec3c-4993-a602-bef899bf3ac3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="e754830f-44ad-44ef-9da9-7fa40f50e0b8" name="View Student Time Table" isLeaf="false">
+            <elementDefinition Id="4c0c51b6-0fb9-41ea-bf3c-7e9a065598b2" />
+          </opaqueAction>
+          <opaqueAction Id="d9beae3d-7c56-4d03-a841-896ff4b10aac" name="View Faculty Time Table" isLeaf="false">
+            <elementDefinition Id="25471084-5166-49f9-a0da-708e564abd8a" />
+          </opaqueAction>
+          <opaqueAction Id="a065de62-e3ea-41cd-9f0c-1e6809e08092" name="Student Dashboard Page" isLeaf="false">
+            <elementDefinition Id="7430ed58-3e7b-473c-bf00-1b016631658e" />
+            <flowNodeTargets>
+              <controlFlow Id="2ad97852-a9b3-4295-ae13-b12a95b5e74c" isLeaf="false">
+                <opaqueActionMoniker Id="e754830f-44ad-44ef-9da9-7fa40f50e0b8" LastKnownName="View Student Time Table" />
+                <elementDefinition Id="cc58fd04-e79e-4ff1-bc0f-0e3ba8aa5729" />
+              </controlFlow>
+              <controlFlow Id="5796db15-58da-4fc1-8687-0caaf926dc90" isLeaf="false">
+                <opaqueActionMoniker Id="d9beae3d-7c56-4d03-a841-896ff4b10aac" LastKnownName="View Faculty Time Table" />
+                <elementDefinition Id="cd5fce73-86dc-40aa-a687-9963fd75031d" />
+              </controlFlow>
+              <controlFlow Id="adbcccff-9476-4c53-ba80-7307e6c4b7c2" isLeaf="false">
+                <opaqueActionMoniker Id="28bcd9b4-d814-4a8f-8211-85043faae6f0" LastKnownName="manage course form" />
+                <elementDefinition Id="e4aba438-b9b7-482b-9d3e-a5aacc1d180f" />
+              </controlFlow>
+              <controlFlow Id="e1f7cd68-e514-40fe-845c-e615d89a0f5e" isLeaf="false">
+                <opaqueActionMoniker Id="e01374c9-5d8f-4a70-a4b7-fa44f9cef0a5" LastKnownName="Displays Course for the day" />
+                <elementDefinition Id="bdc9c542-a4a4-420c-98f8-f1665851e9a3" />
+              </controlFlow>
+              <controlFlow Id="4abb586f-2f28-4291-bece-61195b0c757b" isLeaf="false">
+                <opaqueActionMoniker Id="bfc71051-26f6-4cf9-9f8d-57b405c84496" LastKnownName="Display Student Details" />
+                <elementDefinition Id="65457079-e433-4e06-80f9-435206e79425" />
+              </controlFlow>
+              <controlFlow Id="6a26db1c-1845-4620-b48a-51df30e2012d" isLeaf="false">
+                <joinNodeMoniker Id="fc0d5343-a7bd-4972-afba-83827c99b64d" LastKnownName="Join1" />
+                <elementDefinition Id="5cc5cee5-b8aa-4a90-8504-c2c6b47c5917" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="2d095aa3-72a3-4ced-8ad3-6f2742351e5b" name="Lecturer Dashboard" isLeaf="false">
+            <elementDefinition Id="176cef6d-04e7-4f6a-a6db-5aa38e75d645" />
+            <flowNodeTargets>
+              <controlFlow Id="ee76410e-fb93-488b-a455-091b69a44204" isLeaf="false">
+                <opaqueActionMoniker Id="9ba908db-e626-4d18-8471-66c1a2228576" LastKnownName="Manage Departments Time Table" />
+                <elementDefinition Id="e6562f5f-5c9c-4f5a-8fb0-fe4cc7834c3a" />
+              </controlFlow>
+              <controlFlow Id="a84ab30d-980c-4a2f-ad6b-58c9224a337a" isLeaf="false">
+                <opaqueActionMoniker Id="91f24dee-c9ab-4942-9fa1-182df1036bf5" LastKnownName="Manage Faculty Courses" />
+                <elementDefinition Id="025ad528-9c61-4d94-b7eb-7ed1e46a4e28" />
+              </controlFlow>
+              <controlFlow Id="2768c3a6-843c-42eb-b675-e6ad3813d2e3" isLeaf="false">
+                <opaqueActionMoniker Id="b2ccb072-e5e7-4bed-8c28-b3e7bef72aa4" LastKnownName="Display Lecturer Details" />
+                <elementDefinition Id="c9383c90-f18b-4717-98f1-4ffb6e098df2" />
+              </controlFlow>
+              <controlFlow Id="9cc7a948-8f0d-49dc-81bc-7a03a66f4ac1" isLeaf="false">
+                <joinNodeMoniker Id="fc0d5343-a7bd-4972-afba-83827c99b64d" LastKnownName="Join1" />
+                <elementDefinition Id="3af1b520-a00c-489f-b2a1-a09175e4745b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="28bcd9b4-d814-4a8f-8211-85043faae6f0" name="manage course form" isLeaf="false">
+            <elementDefinition Id="456e9041-cafc-4257-844d-776d4c257a09" />
+          </opaqueAction>
+          <opaqueAction Id="b07405b7-7057-485a-989d-9086a537ccf2" name="Logout" isLeaf="false">
+            <elementDefinition Id="ebb1a881-d676-4aa1-81c1-1ed28cbfafd2" />
+            <flowNodeTargets>
+              <controlFlow Id="ed242fd4-ca7b-435b-a51a-7ce8b5397f53" isLeaf="false">
+                <activityFinalNodeMoniker Id="26fa5836-e79b-4117-a569-5474810d2b81" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="6b8da624-aa18-4874-9289-6277c3c36553" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="26fa5836-e79b-4117-a569-5474810d2b81" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="96407961-b3a0-4a1c-990c-19a2d65a3b3d" />
+          </activityFinalNode>
+          <opaqueAction Id="c50c18a2-f26a-427d-a25f-d679ab6fd15b" name="Admin Dashboard" isLeaf="false">
+            <elementDefinition Id="5c1dc442-8c71-4272-b8d9-1ad7d1550ae8" />
+            <flowNodeTargets>
+              <controlFlow Id="2a030358-f3ab-4bb8-aeb8-47200ecb8793" isLeaf="false">
+                <opaqueActionMoniker Id="27c768b5-7776-43eb-9b08-f044ad6e149a" LastKnownName="Manage Faculty Courses" />
+                <elementDefinition Id="10cac527-750a-4502-a7ef-b54554a6f08c" />
+              </controlFlow>
+              <controlFlow Id="a24f1c04-84fc-459c-96ff-425f827d977d" isLeaf="false">
+                <opaqueActionMoniker Id="8f431bfc-69f9-448a-967f-9fa8bf2ee941" LastKnownName="Manage Student Dashboard" />
+                <elementDefinition Id="e4715440-b20b-407b-9413-b912ad980f04" />
+              </controlFlow>
+              <controlFlow Id="d9621d9e-d416-4ae4-bed6-d19befa78eb0" isLeaf="false">
+                <opaqueActionMoniker Id="08168a58-a278-49b9-b168-20eca31d294a" LastKnownName="Manage Lcturer Dashboard" />
+                <elementDefinition Id="331ef9c0-5ec3-43ef-acf9-dda4e917f032" />
+              </controlFlow>
+              <controlFlow Id="b999896f-ee23-449c-9d56-45d963ff2d04" isLeaf="false">
+                <opaqueActionMoniker Id="3f5113bc-c33a-4d81-8986-d5b9f60fc13c" LastKnownName="Manage All Departments Courses" />
+                <elementDefinition Id="c1960202-61dc-4228-88b7-7c2ecf9f908d" />
+              </controlFlow>
+              <controlFlow Id="3d8ee887-76c2-4ea6-9a5b-7cd355cc213a" isLeaf="false">
+                <opaqueActionMoniker Id="93fab681-93f6-4143-b90c-57d7a9ee82cc" LastKnownName="Display Admin's Details" />
+                <elementDefinition Id="64a6e9b6-15b1-4e45-9bd3-08413d496a5b" />
+              </controlFlow>
+              <controlFlow Id="2e809fa3-1ad0-43e2-a3a1-7869b97e8c7c" isLeaf="false">
+                <joinNodeMoniker Id="fc0d5343-a7bd-4972-afba-83827c99b64d" LastKnownName="Join1" />
+                <elementDefinition Id="b10ac6a5-0e0c-4b91-90b3-eb65d1861db2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e01374c9-5d8f-4a70-a4b7-fa44f9cef0a5" name="Displays Course for the day" isLeaf="false">
+            <elementDefinition Id="7823644e-c87b-4989-bf24-fb1283cc8fcc" />
+          </opaqueAction>
+          <opaqueAction Id="9ba908db-e626-4d18-8471-66c1a2228576" name="Manage Departments Time Table" isLeaf="false">
+            <elementDefinition Id="b38e217e-ce9d-487f-bdeb-24b61c1a76ad" />
+          </opaqueAction>
+          <opaqueAction Id="91f24dee-c9ab-4942-9fa1-182df1036bf5" name="Manage Faculty Courses" isLeaf="false">
+            <elementDefinition Id="9a4df5a0-e1c0-4717-9939-25339439a318" />
+          </opaqueAction>
+          <opaqueAction Id="27c768b5-7776-43eb-9b08-f044ad6e149a" name="Manage Faculty Courses" isLeaf="false">
+            <elementDefinition Id="9182e2be-2152-499d-9bef-9f1b4c3a90ee" />
+          </opaqueAction>
+          <opaqueAction Id="8f431bfc-69f9-448a-967f-9fa8bf2ee941" name="Manage Student Dashboard" isLeaf="false">
+            <elementDefinition Id="f947f11f-1ee1-46cf-8e65-c835d190654a" />
+          </opaqueAction>
+          <opaqueAction Id="08168a58-a278-49b9-b168-20eca31d294a" name="Manage Lcturer Dashboard" isLeaf="false">
+            <elementDefinition Id="f3a07c29-eff3-46cf-9341-51fc991347e8" />
+          </opaqueAction>
+          <opaqueAction Id="3f5113bc-c33a-4d81-8986-d5b9f60fc13c" name="Manage All Departments Courses" isLeaf="false">
+            <elementDefinition Id="bdb7d402-aea8-4d78-8cc6-0bb50fd26e07" />
+          </opaqueAction>
+          <opaqueAction Id="bfc71051-26f6-4cf9-9f8d-57b405c84496" name="Display Student Details" isLeaf="false">
+            <elementDefinition Id="1e81a2f2-bf08-448f-acf3-2ea2334c8bf4" />
+          </opaqueAction>
+          <opaqueAction Id="b2ccb072-e5e7-4bed-8c28-b3e7bef72aa4" name="Display Lecturer Details" isLeaf="false">
+            <elementDefinition Id="9edbaa7e-630e-4286-8a3e-f21d54d85bb7" />
+          </opaqueAction>
+          <opaqueAction Id="93fab681-93f6-4143-b90c-57d7a9ee82cc" name="Display Admin's Details" isLeaf="false">
+            <elementDefinition Id="23f516f1-2503-4916-8c6c-c7e255bec84e" />
+          </opaqueAction>
+          <joinNode Id="fc0d5343-a7bd-4972-afba-83827c99b64d" name="Join1" isLeaf="false">
+            <elementDefinition Id="a49fd215-7469-4aac-89ca-d3bf235d002f" />
+            <flowNodeTargets>
+              <controlFlow Id="81ddeb4b-5df6-4a22-b3e7-a2d1c997f5a3" isLeaf="false">
+                <opaqueActionMoniker Id="b07405b7-7057-485a-989d-9086a537ccf2" LastKnownName="Logout" />
+                <elementDefinition Id="9ca3ff6b-e81d-448c-9186-225371c25d1b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="ee9ddace-1105-499d-b099-e36528bf298d" name="LectureTimeTableSystem">
+    <elementDefinition Id="4d7c0b33-9831-466e-a332-3afe81be4184" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b4397088-9944-454d-b2b2-96b52fb7debc">
+        <profileInstance Id="61cce84c-5f49-417f-9804-c517fe0c975b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b9017d44-52f2-4b6b-a8a2-b8aa7a134333">
+        <profileInstance Id="c465cf54-6fea-4c56-9dbe-40a088cb3269" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
